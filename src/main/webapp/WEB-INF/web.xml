@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Inserir</servlet-name>
+        <servlet-class>com.danilorocha.padraodaoajax.Controller.Inserir</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Listar</servlet-name>
+        <servlet-class>com.danilorocha.padraodaoajax.Controller.Listar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Editar</servlet-name>
+        <servlet-class>com.danilorocha.padraodaoajax.Controller.Editar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Deletar</servlet-name>
+        <servlet-class>com.danilorocha.padraodaoajax.Controller.Deletar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Inserir</servlet-name>
+        <url-pattern>/inserir</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Listar</servlet-name>
+        <url-pattern>/listar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Editar</servlet-name>
+        <url-pattern>/editar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Deletar</servlet-name>
+        <url-pattern>/deletar</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
